@@ -1,0 +1,100 @@
+.home-first-session-main-div{
+    display: flex; 
+    gap: 2rem;
+
+}
+
+.home-fist-session{
+    width: 50%;
+    margin-top: 5rem;
+    
+}
+
+.first-session-p{
+    text-align: justify;
+}
+
+.first-img-div{
+    width: 70%;
+    margin-left: 5rem;
+}
+
+.first-img{
+    width: 50%;
+    
+}
+
+.getStarted_btn{
+    background: #1180CB !important;
+}
+
+/* -----END OF FIRST SECTION DESIGN -----*/
+
+.second-section-main-div{
+    background: #ECF5FB;
+    height: 430px;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.second-image-div{
+    width: 50%;
+    border-radius: 3rem;
+}
+
+.second-image{
+    width: 350px;
+}
+
+.second-section-container{
+    display: flex;
+    gap: 8rem;
+}
+
+.home-second-section{
+    width: 80%;
+    padding-top: 4rem;
+}
+
+.second-session-p{
+    text-align: justify;
+}
+
+/* -----SECOND SECTION ENDS------ */
+
+.section-three-container{
+    margin-top: 5rem;
+}
+
+.div-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-flex{
+    display: flex;
+    border: 1px solid rgb(169, 169, 169);
+    background: #ECF5FB;
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.padlock-img{
+    width: 70px;
+    height: 70px;
+}
+
+.card-title{
+    font-weight: bolder;
+}
+
+.card-body{
+    text-align: justify;
+    /* background: red; */
+}
+
+/* ------SECTION 3 ENDS HERE------ */

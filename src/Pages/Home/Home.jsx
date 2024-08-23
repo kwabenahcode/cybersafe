@@ -6,6 +6,7 @@ import Frame11 from '../../Images/homeImages/Frame 11.png'
 import padlock from '../../Images/homeImages/padlock.png'
 import load from '../../Images/homeImages/load.png'
 import warning from '../../Images/homeImages/excli.png'
+import vidimg from '../../Images/homeImages/vid-img.png'
 
 function Home() {
   return (
@@ -121,11 +122,59 @@ function Home() {
                     <p>Explore our most popular courses designed to improve your <br />cybersecurity skills. 
                         Start learning today and protect your digital life.
                     </p>
-                    <div>
+                    <div className='video-flex'>
+                        <div className='video-card'>
+                            <img src={vidimg} alt="" className='video-image'/>
+                            <h5><a href=''>Introduction to Cybersecurity</a></h5>
+                            <p className='section-four-p'>
+                            Learn the fundamentals of cybersecurity and protect yourself online. 
+                            This beginner-friendly course covers essential topics like recognizing threats, 
+                            creating strong passwords, and safe browsing practices.
+                            </p>
+                        </div>
 
+                        <div className='video-card'>
+                            <img src={vidimg} alt="" className='video-image'/>
+                            <h5><a href=''>Introduction to Cybersecurity</a></h5>
+                            <p className='section-four-p'>
+                            Learn the fundamentals of cybersecurity and protect yourself online. 
+                            This beginner-friendly course covers essential topics like recognizing threats, 
+                            creating strong passwords, and safe browsing practices.
+                            </p>
+                        </div>
+
+                        <div className='video-card'>
+                            <img src={vidimg} alt="" className='video-image'/>
+                            <h5><a href='https://www.youtube.com/@mrofori01'>Introduction to Cybersecurity</a></h5>
+                            <p className='section-four-p'>
+                            Learn the fundamentals of cybersecurity and protect yourself online. 
+                            This beginner-friendly course covers essential topics like recognizing threats, 
+                            creating strong passwords, and safe browsing practices.
+                            </p>
+                        </div>
                     </div>
                 </Container>
+                <Button className='explore-course-btn'>Explore Courses</Button>
             </div> 
+
+            <div className='section-five-div'>
+                <Container>
+                    <h3>Trending Articles</h3>
+                    <p className='section-five-p'> 
+                        Discover what's currently making waves in the world of cybersecurity. 
+                        Stay informed about emerging threats, new technologies, and best practices."
+                    </p>
+                    <div className='video-card'>
+                            <img src={vidimg} alt="" className='video-image'/>
+                            <h5><a href='https://www.youtube.com/@mrofori01'>10 Essential Cybersecurity Tips for Everyday User</a></h5>
+                            <p className='section-four-p'>
+                            Learn the fundamentals of cybersecurity and protect yourself online. 
+                            This beginner-friendly course covers essential topics like recognizing threats, 
+                            creating strong passwords, and safe browsing practices.
+                            </p>
+                        </div>
+                </Container>
+            </div>
         
     </div>
   )

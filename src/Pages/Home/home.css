@@ -98,3 +98,60 @@
 }
 
 /* ------SECTION 3 ENDS HERE------ */
+
+.section-four-div{
+    margin-top: 5rem;
+    margin: 3rem;
+}
+
+.section-four-p{
+    text-align: justify;
+}
+
+.video-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.video-card{
+    border: 1px solid rgb(171, 171, 171);
+    padding: 6px;
+    border-radius: 9px;
+}
+
+.explore-course-btn{
+    background: transparent !important;
+    color: #1180CB !important;
+    font-weight: bold !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-top: 2rem;
+    margin-left: 33rem;
+}
+
+.explore-course-btn:hover{
+    background: #1180CB !important;
+    color: #ECF5FB !important;
+}
+
+/* SECTION FIVE END HERE */
+
+.section-five-div{
+    background: #F3F3F3;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+
+.section-five-p{
+    text-align: center;
+    width: 50%;
+}
+
+
+
+
+
+
+

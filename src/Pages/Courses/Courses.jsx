@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../Components/Navbar/Header'
 import vidimg from '../../Images/homeImages/imgFive.png'
+import imgvid from '../../Images/homeImages/'
 import './courses.css'
 import { Container } from 'react-bootstrap'
 
@@ -33,7 +34,7 @@ function Courses() {
                     <h2>Recommended Courses</h2>
                     <div>
                         <div>
-                            <img src={} alt="" />
+                            <img src={imgvid} alt="" />
                         </div>
                     </div>
                 </div>

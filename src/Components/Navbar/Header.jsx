@@ -6,41 +6,32 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import './navbar.css'
+import { LinkContainer } from 'react-router-bootstrap';
+import Home from '../../Pages/Home/Home';
 
 
 function Header() {
   return (
     <Navbar expand="lg" className="m-3">
       <Container>
-        <Navbar.Brand className='logo-text m-2' href="#home" >CyberSafe</Navbar.Brand>
+        <LinkContainer to='/'>
+          <Navbar.Brand className='logo-text m-2'>CyberSafe</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='nav_text m-2' href="#home">Home</Nav.Link>
-            <NavDropdown title="Courses" id="basic-nav-dropdown" className='m-2'>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item >
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <NavDropdown title="Resources" id="basic-nav-dropdown" className='m-2'>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link className='nav_text m-2' href="#link" >Link</Nav.Link>
+            <LinkContainer to='/'>
+              <Nav.Link className='nav_text m-2'>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/courses'>
+              <Nav.Link className='nav_text m-2'>Courses</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/resources'>
+              <Nav.Link className='nav_text m-2'>Resources</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/tips">
+              <Nav.Link className='nav_text m-2' >Tips</Nav.Link>
+            </LinkContainer>
           </Nav>
           <Nav>
             <Nav.Link className='login_btn' href="#login" xs="auto" >Log in</Nav.Link>

@@ -141,13 +141,67 @@
 .section-five-div{
     background: #F3F3F3;
     margin-top: 5rem;
-    padding: 5rem;
+    padding: 3rem;
+}
+
+.p-section-five{
+    text-align: justify;
+    width: 50%;
+}
+
+.resources-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.five-video-image{
+    width: 100%;
 }
 
 .section-five-p{
-    text-align: center;
-    width: 50%;
+    text-align: justify;
+    /* width: 80%; */
+    padding: 4px;
 }
+
+/* ----- */
+.video-card-five{
+    background: #ffffff;
+    /* width: 57%; */
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+
+/* --------- */
+.footer-main-div{
+    background: #2C2E2F;
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.line{
+    color: #F3F3F3;
+    height: 1px;
+    width: 70%;
+    background: #F3F3F3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.footer-div{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
 
 
 

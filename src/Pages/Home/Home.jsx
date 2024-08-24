@@ -7,10 +7,15 @@ import padlock from '../../Images/homeImages/padlock.png'
 import load from '../../Images/homeImages/load.png'
 import warning from '../../Images/homeImages/excli.png'
 import vidimg from '../../Images/homeImages/vid-img.png'
+import imgfive from '../../Images/homeImages/imgFive.png'
+import Header from '../../Components/Navbar/Header'
+import Footer from '../../Components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
     <div>
+        <Header />
         <Container className='home-first-session-main-div'>
             <div className='home-fist-session'>
                 <h2>Comprehensive Cybersecurity Guidance for Everyone"</h2>
@@ -154,28 +159,40 @@ function Home() {
                         </div>
                     </div>
                 </Container>
-                <Button className='explore-course-btn'>Explore Courses</Button>
+                <Link to='/courses'><Button className='explore-course-btn'>Explore Courses</Button></Link>
             </div> 
 
             <div className='section-five-div'>
                 <Container>
                     <h3>Trending Articles</h3>
-                    <p className='section-five-p'> 
+                    <p className='p-section-five'> 
                         Discover what's currently making waves in the world of cybersecurity. 
                         Stay informed about emerging threats, new technologies, and best practices."
                     </p>
-                    <div className='video-card'>
-                            <img src={vidimg} alt="" className='video-image'/>
+                    <div className='resources-div'>
+                        <div className='video-card-five'>
+                                <img src={imgfive} alt="" className='five-video-image'/>
+                                <h5><a href='https://www.youtube.com/@mrofori01'>10 Essential Cybersecurity Tips for Everyday User</a></h5>
+                                <p className='section-five-p'>
+                                Learn the fundamentals of cybersecurity and protect yourself online. 
+                                This beginner-friendly course covers essential topics like recognizing threats, 
+                                creating strong passwords, and safe browsing practices.
+                                </p>
+                        </div>
+                        <div className='video-card-five'>
+                            <img src={imgfive} alt="" className='five-video-image'/>
                             <h5><a href='https://www.youtube.com/@mrofori01'>10 Essential Cybersecurity Tips for Everyday User</a></h5>
-                            <p className='section-four-p'>
+                            <p className='section-five-p'>
                             Learn the fundamentals of cybersecurity and protect yourself online. 
                             This beginner-friendly course covers essential topics like recognizing threats, 
                             creating strong passwords, and safe browsing practices.
                             </p>
-                        </div>
+                    </div>
+                    </div>
                 </Container>
+                <Link to='/resources'><Button className='explore-course-btn'>Explore more Articles</Button></Link>
             </div>
-        
+           <Footer />
     </div>
   )
 }

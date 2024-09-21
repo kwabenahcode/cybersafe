@@ -34,7 +34,9 @@ function Header() {
             </LinkContainer>
           </Nav>
           <Nav>
-            <Nav.Link className='login_btn' href="#login" xs="auto" >Log in</Nav.Link>
+            <LinkContainer to='/login'>
+              <Nav.Link className='login_btn' href="#login" xs="auto" >Log in</Nav.Link>
+            </LinkContainer>
             <Col xs="auto">
               <Button type="submit" className='sign_up_btn'>Sign up</Button>
             </Col>

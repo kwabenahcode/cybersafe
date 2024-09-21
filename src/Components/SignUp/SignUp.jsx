@@ -1,12 +1,11 @@
 import React from 'react'
-import './login.css'
 import { Button, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'react-bootstrap-icons';
 import { useNavigate } from 'react-router-dom';
+import './signup.css'
 
-
-function Login() {
+function SignUp() {
     const navigate = useNavigate()
   return (
     <div>
@@ -14,11 +13,11 @@ function Login() {
             <div className='login-first-div'>
             </div>
             <div className='login-second-div'>
-                <Link onClick={()=> navigate(-1)}>
+                <Link onClick={() => navigate(-1)}>
                     <ArrowLeft />
                 </Link>
                 <div className='form-class'>
-                <h2>You are welcome</h2>
+                <h2>Let's get started</h2>
                     <Form>
                         <label className="login__form__label">Email</label>
                         <br />
@@ -36,17 +35,28 @@ function Login() {
                         <input
                         type="email"
                         className="login__input"
-                        id="email"
+                        id="password"
+                        placeholder="********"
+                        />
+                    </Form>
+
+                    <Form>
+                        <label className="login__form__label">Confirm Password</label>
+                        <br />
+                        <input
+                        type="email"
+                        className="login__input"
+                        id="Confirmpassword"
                         placeholder="********"
                         />
                     </Form>
 
                     <div>
                         <Link to='/'>
-                            <Button className='sign_btn'>Sign in</Button>
+                            <Button className='sign_btn'>Sign up</Button>
                         </Link>
                     </div>
-                    <label>Don't have an account? <Link to='/signup'>Sign up</Link></label>
+                    <label>You have an account already?<Link to='/login'>Sign in</Link></label>
                 </div>
             
             </div>
@@ -55,4 +65,4 @@ function Login() {
   )
 }
 
-export default Login
+export default SignUp

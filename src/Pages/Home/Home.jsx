@@ -8,6 +8,7 @@ import load from '../../Images/homeImages/load.png'
 import warning from '../../Images/homeImages/excli.png'
 import vidimg from '../../Images/homeImages/vid-img.png'
 import imgfive from '../../Images/homeImages/imgFive.png'
+import trendartimg from '../../Images/homeImages/trendartimg.png'
 import secu from '../../Images/homeImages/secu.png'
 import Header from '../../Components/Navbar/Header'
 import Footer from '../../Components/Footer/Footer'
@@ -173,21 +174,20 @@ function Home() {
                     </p>
                     <div className='resources-div'>
                         <div className='video-card-five'>
-                                <img src={imgfive} alt="" className='five-video-image'/>
-                                <h5><a href='https://www.youtube.com/@mrofori01'>10 Essential Cybersecurity Tips for Everyday User</a></h5>
+                                <img src={trendartimg} alt="" className='five-video-image'/>
+                                <h5><a href='https://cybervie.com/blog/top-10-cybersecurity-tips-everyone-should-know/'>Top 10 Cybersecurity Tips Everyone Should Know
+                                </a></h5>
                                 <p className='section-five-p'>
-                                Learn the fundamentals of cybersecurity and protect yourself online. 
-                                This beginner-friendly course covers essential topics like recognizing threats, 
-                                creating strong passwords, and safe browsing practices.
+                                In the digital age, Cybersecurity is not just a buzzword but a necessity. 
+                                Everyday Internet users must know the Top 10 Cybersecurity Tips.
                                 </p>
                         </div>
                         <div className='video-card-five'>
                             <img src={imgfive} alt="" className='five-video-image'/>
-                            <h5><a href='https://www.youtube.com/@mrofori01'>10 Essential Cybersecurity Tips for Everyday User</a></h5>
+                            <h5><a href='https://academic.oup.com/cybersecurity/article/7/1/tyab019/6382745?searchresult=1'>Cyberattacks, cyber threats, and attitudes toward cybersecurity policies</a></h5>
                             <p className='section-five-p'>
-                            Learn the fundamentals of cybersecurity and protect yourself online. 
-                            This beginner-friendly course covers essential topics like recognizing threats, 
-                            creating strong passwords, and safe browsing practices.
+                            In recent years, the increase in civilian exposure to cyberattacks has been accompanied by 
+                            heightened demands for governments to introduce comprehensive cybersecurity policies.
                             </p>
                     </div>
                     </div>

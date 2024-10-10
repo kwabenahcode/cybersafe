@@ -7,6 +7,7 @@ import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import PrivateRoute from './Components/ProtectedRoute/PrivateRoute';
 import Tips from './Pages/Tips/Tips';
+import Header from './Components/Navbar/Header';
 
 function App() {
   return (

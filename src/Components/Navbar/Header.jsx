@@ -53,6 +53,7 @@ function Header() {
                                 </Col>
                             </>
                         ) : (
+                          
                             <Button className='login_btn' onClick={handleLogout}>Logout</Button>
                         )}
                     </Nav>

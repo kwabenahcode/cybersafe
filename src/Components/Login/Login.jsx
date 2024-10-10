@@ -18,6 +18,8 @@ function Login() {
         e.preventDefault(); // Prevent default form submission
         setErrorMessage(''); // Clear previous error messages
 
+        console.log('Form submitted');  // Debugging log
+
         try {
             const response = await fetch('http://localhost:8000/api/user/login/', {
                 method: 'POST',
@@ -25,27 +27,32 @@ function Login() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    email_address: email,  // Use the field that your backend expects
+                    email_address: email,  // Make sure this matches what your backend expects
                     password: password,
                 }),
             });
 
             const data = await response.json();
+            console.log('Response received', data);  // Debugging log
 
             if (response.ok) {
                 // Store tokens in localStorage (adjust according to your API response)
                 localStorage.setItem('authToken', data.access);
                 localStorage.setItem('refreshToken', data.refresh);
 
+                console.log('Tokens stored in localStorage');  // Debugging log
+
                 // Redirect the user to the homepage after login
                 navigate('/');
             } else {
                 // Display error message from the backend
                 setErrorMessage(data.detail || 'Login failed. Please try again.');
+                console.log('Login failed', data.detail);  // Debugging log
             }
         } catch (error) {
             // Handle any network or other errors
             setErrorMessage('Something went wrong. Please try again.');
+            console.log('Error caught during login attempt', error);  // Debugging log
         }
     };
 

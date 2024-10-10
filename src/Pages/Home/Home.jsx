@@ -8,6 +8,7 @@ import load from '../../Images/homeImages/load.png'
 import warning from '../../Images/homeImages/excli.png'
 import vidimg from '../../Images/homeImages/vid-img.png'
 import imgfive from '../../Images/homeImages/imgFive.png'
+import secu from '../../Images/homeImages/secu.png'
 import Header from '../../Components/Navbar/Header'
 import Footer from '../../Components/Footer/Footer'
 import { Link } from 'react-router-dom'
@@ -130,7 +131,8 @@ function Home() {
                     <div className='video-flex'>
                         <div className='video-card'>
                             <img src={vidimg} alt="" className='video-image'/>
-                            <h5><a href=''>Introduction to Cybersecurity</a></h5>
+                            <h5><a href=''>Introduction to Cybersecurity
+                            By Codecademy</a></h5>
                             <p className='section-four-p'>
                             Learn the fundamentals of cybersecurity and protect yourself online. 
                             This beginner-friendly course covers essential topics like recognizing threats, 
@@ -139,8 +141,8 @@ function Home() {
                         </div>
 
                         <div className='video-card'>
-                            <img src={vidimg} alt="" className='video-image'/>
-                            <h5><a href=''>Introduction to Cybersecurity</a></h5>
+                            <img src={secu} alt="" className='video-image'/>
+                            <h5><a href=''>Cybersecurity Fundamentals - IBM</a></h5>
                             <p className='section-four-p'>
                             Learn the fundamentals of cybersecurity and protect yourself online. 
                             This beginner-friendly course covers essential topics like recognizing threats, 

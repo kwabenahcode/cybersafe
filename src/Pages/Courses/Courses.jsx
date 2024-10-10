@@ -2,9 +2,11 @@ import React from 'react'
 import Header from '../../Components/Navbar/Header'
 import vidimg from '../../Images/homeImages/imgFive.png'
 import imgvid from '../../Images/homeImages/vid-img.png'
+import secu from '../../Images/homeImages/secu.png'
 import './courses.css'
 import { Container } from 'react-bootstrap'
 import Footer from '../../Components/Footer/Footer'
+import codeaca from '../../Images/homeImages/codeaca.png'
 
 function Courses() {
   return (
@@ -15,7 +17,7 @@ function Courses() {
             <h3>Current Courses</h3>
             <div className='courses-div-flex'>
                 <div className='courses-div'>
-                    <img src={vidimg} alt="" />
+                    <img src={secu} alt="" />
                     <div>
                     <h4>Introduction to Cybersecurity</h4>
                     <p className='courses-p'>
@@ -35,9 +37,10 @@ function Courses() {
                     <h2>Recommended Courses</h2>
                     <div className='recommended-flex'>
                         <div className='recommended-card'>
-                            <img src={imgvid} alt="" />
+                            <img src={codeaca} alt="" />
                             <div>
-                                <h5>Introduction to Cybersecurity</h5>
+                                <h5>Introduction to Cybersecurity
+                                By Codecademy</h5>
                                 <p className='recommended-p'>Learn the fundamentals of cybersecurity and protect yourself online. 
                                 This beginner-friendly course covers essential topics like recognizing threats, 
                                 creating strong passwords, and safe browsing practices.
@@ -46,9 +49,9 @@ function Courses() {
                         </div>
 
                         <div className='recommended-card'>
-                            <img src={imgvid} alt="" />
+                            <img src={secu} alt="" />
                             <div>
-                                <h5>Introduction to Cybersecurity</h5>
+                                <h5>Cybersecurity Fundamentals - IBM</h5>
                                 <p className='recommended-p'>Learn the fundamentals of cybersecurity and protect yourself online. 
                                 This beginner-friendly course covers essential topics like recognizing threats, 
                                 creating strong passwords, and safe browsing practices.

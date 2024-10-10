@@ -5,18 +5,19 @@ import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import Resources from './Pages/Resources/Resources';
 import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
+import PrivateRoute from './Components/ProtectedRoute/PrivateRoute';
+import Tips from './Pages/Tips/Tips';
 
 function App() {
   return (
       <Router>
         <Routes>
-          <Route path='/' Component={Home} />
-          <Route path='/courses' Component={Courses}/>
-          <Route path='/resources' Component={Resources} />
-          <Route path='/login' Component={Login} />
-          <Route path='/signup' Component={SignUp} />
-          <Route path="/dashboard" element={<PrivateRoute><Resources /></PrivateRoute>} 
-        />
+          <Route path='/' element={<Home/>} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path="/resources" element={<PrivateRoute><Resources /></PrivateRoute>} />
+          <Route path="/courses" element={<PrivateRoute><Courses /></PrivateRoute>} />
+          <Route path="/tips" element={<PrivateRoute><Tips /></PrivateRoute>} />
         </Routes>
       </Router>
 

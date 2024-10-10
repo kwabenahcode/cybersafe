@@ -200,6 +200,10 @@
     gap: 2rem;
 }
 
+a {
+    color: inherit !important; 
+    text-decoration: none !important; 
+  }
 
 
 

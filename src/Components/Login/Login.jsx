@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import './login.css'
-import { Button, Form } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import './login.css';
+import { Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'react-bootstrap-icons';
 import { useNavigate } from 'react-router-dom';
-
 
 function Login() {
     const navigate = useNavigate();
@@ -34,11 +33,11 @@ function Login() {
             const data = await response.json();
 
             if (response.ok) {
-                // Assuming you get tokens in the response (adjust according to your API)
-                localStorage.setItem('access_token', data.access);
-                localStorage.setItem('refresh_token', data.refresh);
+                // Store tokens in localStorage (adjust according to your API response)
+                localStorage.setItem('authToken', data.access);
+                localStorage.setItem('refreshToken', data.refresh);
 
-                // Navigate to the homepage or another page after login
+                // Redirect the user to the homepage after login
                 navigate('/');
             } else {
                 // Display error message from the backend
@@ -59,7 +58,7 @@ function Login() {
                         <ArrowLeft />
                     </Link>
                     <div className='form-class'>
-                        <h2>You are welcome</h2>
+                        <h2>Welcome Back</h2>
 
                         {/* Show error message if login fails */}
                         {errorMessage && <p className="error-message">{errorMessage}</p>}

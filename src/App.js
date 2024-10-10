@@ -15,6 +15,8 @@ function App() {
           <Route path='/resources' Component={Resources} />
           <Route path='/login' Component={Login} />
           <Route path='/signup' Component={SignUp} />
+          <Route path="/dashboard" element={<PrivateRoute><Resources /></PrivateRoute>} 
+        />
         </Routes>
       </Router>
 

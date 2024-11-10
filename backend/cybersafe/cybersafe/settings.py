@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'corsheaders', 
     'rest_framework_simplejwt',
     "rest_framework_simplejwt.token_blacklist",
+    'chatbot',
 ]
 
 #cUSTOM
@@ -73,7 +74,7 @@ ROOT_URLCONF = 'cybersafe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
